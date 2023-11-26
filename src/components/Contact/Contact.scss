@@ -1,0 +1,116 @@
+.form-zone {
+    width: 50%;
+    margin-top: 20px;
+
+    form {
+        width: 75%;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        
+        li{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+            display: block;
+            position: relative;
+            opacity: 0;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+            clear: both;
+        }
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    input[type ='text'],
+    input[type ='email']{
+        width: 100%;
+        margin: 5px 0;
+        border: 0;
+        background: #115173;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 0 20px;
+        box-sizing: border-box;
+        
+        &:focus{
+            border: none;
+            outline: none;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        margin: 5px 0;
+        border: 0;
+        background: #115173;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px;
+        min-height: 150px;
+        box-sizing: border-box;
+        resize: none;
+
+        &:focus{
+            border: none;
+            outline: none;
+        }
+    }
+
+    .flat-button {
+        color: #affd77;
+        background: 0 0;
+        font: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 1px solid #affd77;
+        float: left;
+        border-radius: 4px;
+
+        &:hover {
+            background: #affd77;
+            color: #115173;
+        }
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .contact-page {
+        flex-direction: column;
+        .text-zone {
+            width: 100%;
+
+            h1 {
+                margin-bottom: 20px;
+                font-size: 49px;
+            }
+        }
+        .form-zone {
+            width: 100%;
+            padding-left: 30px;
+            margin-bottom: 40px;
+            form {
+                width: 90%;
+                .flat-button {
+                    float: right;
+                }
+            }
+        }
+    }
+}

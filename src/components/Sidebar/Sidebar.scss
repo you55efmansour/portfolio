@@ -1,0 +1,111 @@
+.nav-bar {
+    background: #181818;
+    width: 65px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+    .logo{
+        display: block;
+        margin-top: 5px;
+
+        img {
+            display: block;
+            width: 30px;
+            border-radius: 6px;
+        }
+    }
+    nav {
+        height: 210px;   
+        a {
+            width: 100%;
+            font-size: 22px;
+            text-align: center;
+            color: #4d4d4e;
+            text-decoration: none;
+            height: 51px;
+            i{
+                transition: all 0.3s ease-out;
+            }
+            &:hover {
+                color: #affd77;
+                font-weight: bold;
+                svg {
+                    opacity: 0;
+                }
+                &::after {
+                    opacity: 1;
+                }
+            }
+            &::after {
+                content: "";
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 50%;
+                left: 0;
+                text-align: center;
+                display: block;
+                width: 100%;
+                opacity: 0;
+                transition: all 0.3 ease-out;
+            }
+            &:first-child {
+                &::after {
+                    content: "HOME";
+                }
+            }
+        }
+        a.about-link {
+            &::after{
+                content: "ABOUT";
+                left: -5px;
+            }   
+        }
+        a.contact-link {
+            &::after{
+                content: "CONTACT";
+                left: -14px;
+            }   
+        }
+        a.skills-link {
+            &::after{
+                content: "SKILLS";
+                left: -5px;
+            }   
+        }
+        a.projects-link {
+            &::after{
+                content: "PROJECTS";
+                left: -16px;
+            }   
+        }
+        a.active {
+            svg {
+                color: #affd77;
+            }
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        display: block;
+        flex-basis: 25%;
+
+        li {
+            a{
+                padding: 7px 0;
+                display: block;
+                font-size: 20px;
+                line-height: 16px;
+                &:hover svg {
+                    color: #affd77;
+                }
+            }
+        }
+    }
+}

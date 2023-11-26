@@ -1,0 +1,48 @@
+$primary-color:#affd77;
+
+@import 'animate.css';
+@import 'loaders.css/src/animations/ball-clip-rotate-multiple.scss';
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+input,
+textarea {
+  font-family: 'Helvetica Neue',sans-serif;
+}
+
+.loader-hidden {
+  display: none;
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 50px;
+  right: 0;
+  margin: auto;
+  top:100px;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}
