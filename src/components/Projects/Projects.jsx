@@ -9,9 +9,10 @@ import n from './projects-img/noxe.png'
 import h from './projects-img/html&css.png'
 import d from './projects-img/dashboard.png'
 import p from './projects-img/pray-time.png'
+import y from './projects-img/youmanz.png'
 
 
-const img = [n ,p ,h ,d]
+const img = [n ,p ,h ,d,y]
 
 export default function Projects() {
     const [letterClass, setLetterClass] = useState('text-animate')
