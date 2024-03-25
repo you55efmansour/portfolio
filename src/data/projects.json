@@ -8,10 +8,11 @@
         {   
             "title":"pray-time",
             "description":"HTML, CSS, JS",
-            "url":"https://you55efmansour.github.io/pray-time/"
+            "url":"https://you55efmansour.github.io/pray-time/",
+            "img":"/portfolio/static/media/"
         },
         {
-            "title":"(HTML&CSS)",
+            "title":"UI project",
             "description":"HTML, CSS, Bootstrab",
             "url":"https://you55efmansour.github.io/HTML-CSS1/"
         },
@@ -26,6 +27,12 @@
             "title":"YouMans",
             "description":"HTML, CSS, Js",
             "url":"https://you55efmansour.github.io/youmanz/"
+        },
+        {
+            
+            "title":"toDoList",
+            "description":"HTML, CSS, Js",
+            "url":"https://you55efmansour.github.io/to-do-list/"
         }
     ]
 }

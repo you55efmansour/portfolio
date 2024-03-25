@@ -10,9 +10,10 @@ import h from './projects-img/html&css.png'
 import d from './projects-img/dashboard.png'
 import p from './projects-img/pray-time.png'
 import y from './projects-img/youmanz.png'
+import t from './projects-img/toDoList.png'
 
 
-const img = [n ,p ,h ,d,y]
+const img = [n ,p ,h ,d,y,t]
 
 export default function Projects() {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -31,8 +32,8 @@ export default function Projects() {
                         <Link target='_blank' to={proj.url} className='image-box' key={i}>
                                 <img 
                                 src={img[i]}
-                                 className='project-image'
-                                  alt="project" />
+                                className='project-image'
+                                alt="project" key={i}/>
                             <div className="img-content">
                                 <p className="title">{proj.title}</p>
                                 <h4 className='description'>{proj.description}</h4>

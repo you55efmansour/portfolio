@@ -73,7 +73,7 @@
                 rgba(0, 0, 0, 0.5) 0,
                 rgba(0, 0, 0, 1)
             );
-            bottom: 0px;
+            bottom: -80px;
         }
         .title {
             margin-bottom: 0;
@@ -95,7 +95,7 @@
 
         &:after {
             content: "";
-            background: linear-gradient(180deg, #affd77, #000);
+            background: linear-gradient(180deg, #3c6e17, #000);
             position: absolute;
             left: 0;
             right: 0;
@@ -109,16 +109,11 @@
         }
 
         &:hover:after {
-            opacity: 0.85;
+            opacity: 0.8;
         }
 
         &:hover .img-content {
-            background: transparent;
-            padding: 0;
-            width: fit-content;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50% , -50%);
+            bottom: 0px;
         }
     }
 }
