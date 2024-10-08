@@ -4,19 +4,22 @@ import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import Loader from 'react-loaders'
 export default function Skills() {
     const [letterClass, setLetterClass] = useState('text-animate')
-    useEffect(()=>{
-        setTimeout(() => {
-           setLetterClass('text-animate-hover')
-       },4000)
-   },[])
+    useEffect(() => {
+        const timerId = setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 4000)
 
+        return () => {
+            clearTimeout(timerId)
+        }
+    }, [])
   return (
     <>
 
     <div className="skills-page content">
         <div className="container skills-c">
             <div className="text-zone d-flex justify-content-center">
-                <h1>
+                <h1 className='position-relative title'>
                     <AnimatedLetters letterClass={letterClass} strArray={['skills']} idx={15}/>
                 </h1>
                 <p>

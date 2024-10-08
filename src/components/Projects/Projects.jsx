@@ -5,23 +5,20 @@ import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import projectsData from '../../data/projects.json'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
-import n from './projects-img/noxe.png'
-import h from './projects-img/html&css.png'
-import d from './projects-img/dashboard.png'
-import p from './projects-img/pray-time.png'
-import y from './projects-img/youmanz.png'
-import t from './projects-img/toDoList.png'
 
-
-const img = [n ,p ,h ,d,y,t]
 
 export default function Projects() {
-    const [letterClass, setLetterClass] = useState('text-animate')
-    useEffect(()=>{
-        setTimeout(() => {
+ const [letterClass, setLetterClass] = useState('text-animate')
+
+    useEffect(() => {
+        const timerId = setTimeout(() => {
             setLetterClass('text-animate-hover')
-        },3000)
-    },[])
+        }, 3000)
+
+        return () => {
+            clearTimeout(timerId)
+        }
+    }, [])
 
     const renderProject = (project) => {
         return(
@@ -31,7 +28,7 @@ export default function Projects() {
                         return (
                         <Link target='_blank' to={proj.url} className='image-box' key={i}>
                                 <img 
-                                src={img[i]}
+                                src={`${process.env.PUBLIC_URL}${proj.img}`}
                                 className='project-image'
                                 alt="project" key={i}/>
                             <div className="img-content">

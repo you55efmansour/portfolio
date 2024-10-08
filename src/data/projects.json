@@ -3,36 +3,72 @@
         {
             "title":"noxe",
             "description":"React, jsx",
-            "url":"https://you55efmansour.github.io/moviesReact/"
+            "url":"https://you55efmansour.github.io/moviesReact/",
+            "img":"/proj img/noxe.png"
         },
         {   
             "title":"pray-time",
             "description":"HTML, CSS, JS",
             "url":"https://you55efmansour.github.io/pray-time/",
-            "img":"/portfolio/static/media/"
+            "img":"/proj img/pray-time.png"
         },
         {
             "title":"UI project",
             "description":"HTML, CSS, Bootstrab",
-            "url":"https://you55efmansour.github.io/HTML-CSS1/"
+            "url":"https://you55efmansour.github.io/HTML-CSS1/",
+            "img":"/proj img/ui.png"
         },
         {
             
             "title":"Dashboard",
             "description":"HTML, CSS, Bootstrab",
-            "url":"https://you55efmansour.github.io/Dashboard/"
+            "url":"https://you55efmansour.github.io/Dashboard/",
+            "img":"/proj img/dashboard.png"
         },
         {
             
             "title":"YouMans",
             "description":"HTML, CSS, Js",
-            "url":"https://you55efmansour.github.io/youmanz/"
+            "url":"https://you55efmansour.github.io/youmanz/",
+            "img":"/proj img/youmanz.png"
         },
         {
             
             "title":"toDoList",
             "description":"HTML, CSS, Js",
-            "url":"https://you55efmansour.github.io/to-do-list/"
+            "url":"https://you55efmansour.github.io/to-do-list/",
+            "img":"/proj img/toDoList.png"
+        },
+
+
+
+        {
+            
+            "title":"Deka",
+            "description":"React app",
+            "url":"https://deka.aramedai.online/",
+            "img":"/proj img/Deka.png"
+        },
+        {
+            
+            "title":"E-Commerce",
+            "description":"React , jsx",
+            "url":"https://you55efmansour.github.io/E-Commerce/",
+            "img":"/proj img/E-Commerce.png"
+        },
+        {
+            
+            "title":"UI-2",
+            "description":"HTML, CSS",
+            "url":"https://you55efmansour.github.io/vivaDecor-UI/",
+            "img":"/proj img/ui-2.png"
+        },
+        {
+            
+            "title":"UI-3",
+            "description":"HTML, CSS",
+            "url":"https://you55efmansour.github.io/ui-proj/",
+            "img":"/proj img/ui-3.png"
         }
     ]
 }

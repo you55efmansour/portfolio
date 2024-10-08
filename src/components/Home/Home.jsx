@@ -12,11 +12,15 @@ export default function Home() {
     const jobArray = ['w','e','b',' ','d','e','v','e','l','o','p','e','r','.']
     const hiArray = ['H','i',',']
 
-    useEffect(()=>{
-         setTimeout(() => {
-            setLetterClass('text-animate-hover')
-        },4000)
-    },[])
+    useEffect(() => {
+      const timerId = setTimeout(() => {
+          setLetterClass('text-animate-hover')
+      }, 4000)
+
+      return () => {
+          clearTimeout(timerId)
+      }
+  }, [])
 
   return (
     <>

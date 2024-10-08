@@ -9,11 +9,15 @@ import { Helmet } from 'react-helmet'
 export default function About() {
     const [letterClass, setLetterClass] = useState('text-animate')
   
-    useEffect(()=>{
-        setTimeout(() => {
-           setLetterClass('text-animate-hover')
-       },4000)
-   },[])
+    useEffect(() => {
+        const timerId = setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 4000)
+
+        return () => {
+            clearTimeout(timerId)
+        }
+    }, [])
     return (
         <>
             <Helmet>

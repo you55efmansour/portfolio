@@ -29,9 +29,24 @@
     }
 }
 
-@media screen and (max-width:600px) {
+@media (max-width:600px) {
     p{
         width: 100%;
         margin-left: 20px;
     }
   }
+  @media (min-width : 768px) {
+    h1.title{
+        left: -200px;
+    }
+}
+@media (min-width : 992px) {
+    h1.title{
+        left: -300px;
+    }
+}
+@media (min-width : 1200px) {
+    h1.title{
+        left: -400px;
+    }
+}

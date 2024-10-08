@@ -11,11 +11,15 @@ export default function Contact() {
     const refForm = useRef()
    
    
-    useEffect(()=>{
-        setTimeout(() => {
-           setLetterClass('text-animate-hover')
-       },4000)
-   },[])
+    useEffect(() => {
+        const timerId = setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 4000)
+
+        return () => {
+            clearTimeout(timerId)
+        }
+    }, [])
 
    const sendEmail = (e) =>{
     e.preventDefault()
