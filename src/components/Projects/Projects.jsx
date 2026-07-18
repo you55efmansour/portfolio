@@ -50,15 +50,15 @@ export default function Projects() {
                 <title>Projects</title>
         </Helmet>
         <div className="content projects-page">
-            <h1 className='page-title'>
-                <AnimatedLetters
-                letterClass={letterClass}
-                    strArray={['Projects']}
-                    idx={15}
-                />
-            </h1>
             <div className="project-page-content container">
-                    <div>{renderProject(projectsData.project)}</div>
+                <h1 className='page-title'>
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={['Projects']}
+                        idx={15}
+                    />
+                </h1>
+                {renderProject(projectsData.project)}
             </div>
         </div>
         <Loader type='ball-clip-rotate-multiple'/>

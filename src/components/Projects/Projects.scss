@@ -1,17 +1,36 @@
 .projects-page {
     flex-direction: column;
-    padding-top: 10px;
-    padding-left: 0;
+    align-items: stretch;
+    padding: 32px 30px 48px 105px;
+    scrollbar-width: thin;
+    scrollbar-color: #affd77 #011c2b;
 
-    a {
-        width: 80%;
-        margin-left: 70px;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #011c2b;
+        border-radius: 10px;
+        box-shadow: inset 0 0 0 1px rgba(175, 253, 119, 0.12);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        min-height: 44px;
+        border: 2px solid #011c2b;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #affd77, #3c6e17);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #c6ff9e, #5b982e);
     }
 
     h1.page-title {
         width:fit-content;
-        text-align: center;
+        text-align: left;
         position: relative;
+        margin: 0 0 48px;
         
         &::before{
             content: '<h1>';
@@ -40,17 +59,20 @@
 
     .project-page-content {
         width: 100%;
+        padding-top: 8px;
     }
 
     .images-container {
         display: grid;
         grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
-        row-gap: 40px;
+        gap: 40px 28px;
     }
 
     .image-box {
         position: relative;
         flex: 1 1 20%;
+        width: 100%;
+        margin: 0;
         height: 400px;
         overflow: hidden;
         border-radius: 10px;
@@ -119,18 +141,17 @@
     }
 }
 
-@media (min-width : 768px) {
-    h1.page-title{
-        left: -200px;
-    }
-}
-@media (min-width : 992px) {
-    h1.page-title{
-        left: -300px;
-    }
-}
-@media (min-width : 1200px) {
-    h1.page-title{
-        left: -400px;
+@media (max-width: 767px) {
+    .projects-page {
+        padding: 78px 18px 40px;
+
+        h1.page-title {
+            margin-bottom: 36px;
+        }
+
+        .images-container {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 28px;
+        }
     }
 }

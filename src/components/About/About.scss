@@ -1,12 +1,16 @@
-.stage-cube-cont {
+.about-page .stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
     height: 100%;
-    top: 0;
-    padding-top: 10%;
-    margin-left: 0;
-    position: absolute;
-    right: 0;
-    overflow: hidden;
+}
+
+.stage-cube-cont {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: visible;
 }
 
 .cubespinner {
@@ -16,7 +20,9 @@
     animation-duration: 12s;
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
-    margin-left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    margin: 0;
 
     div {
         position: absolute;
@@ -90,17 +96,21 @@
             }
         }
         .stage {
-            position: relative;
-            padding-top: 10px;
-            padding-bottom: 180px;
+            width: 100%;
+            height: 140px;
+            padding: 10px 0 30px;
+            flex: 0 0 auto;
         }
         .stage-cube-cont {
-            position: initial;
-            width: 100%;
-            height: 0;
+            width: 100px;
+            height: 100px;
             overflow: visible;
         }
         .cubespinner {
+            width: 100px;
+            height: 100px;
+            transform-origin: 50px 50px 0;
+
             div {
                 width: 100px;
                 height: 100px;
