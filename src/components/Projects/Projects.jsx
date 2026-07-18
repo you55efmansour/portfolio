@@ -28,9 +28,9 @@ export default function Projects() {
                         return (
                         <Link target='_blank' to={proj.url} className='image-box' key={i}>
                                 <img 
-                                src={`${process.env.PUBLIC_URL}${proj.img}`}
+                                src={`${import.meta.env.BASE_URL}${proj.img.replace(/^\//, '')}`}
                                 className='project-image'
-                                alt="project" key={i}/>
+                                alt={`${proj.title} project`} key={i}/>
                             <div className="img-content">
                                 <p className="title">{proj.title}</p>
                                 <h4 className='description'>{proj.description}</h4>

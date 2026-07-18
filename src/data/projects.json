@@ -1,8 +1,20 @@
 {
     "project":[
         {
+            "title":"Gilha",
+            "description":"React app",
+            "url":"https://gilha-sa.com",
+            "img":"/proj img/Gilha.png"
+        },
+        {
+            "title":"Lamma",
+            "description":"React app",
+            "url":"https://www.lammah-kw.com",
+            "img":"/proj img/Lamma.png"
+        },
+        {
             "title":"noxe",
-            "description":"React, jsx",
+            "description":"React app",
             "url":"https://you55efmansour.github.io/moviesReact/",
             "img":"/proj img/noxe.png"
         },
@@ -52,7 +64,7 @@
         {
             
             "title":"E-Commerce",
-            "description":"React , jsx",
+            "description":"React app",
             "url":"https://you55efmansour.github.io/E-Commerce/",
             "img":"/proj img/e-commerce.png"
         },
